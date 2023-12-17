@@ -2,13 +2,15 @@
   flex-shrink: 0;
   color: #fff;
   text-align: center;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
   background-color: #333;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s;
 
   &:hover {
@@ -32,7 +34,7 @@
     height: 48px;
 
     @include onTablet {
-      display: block;
+      display: flex;
     }
   }
 
@@ -45,5 +47,10 @@
     @include onTablet {
       display: none;
     }
+  }
+
+  .button__text {
+    display: inline-block;
+    vertical-align: middle;
   }
 }
